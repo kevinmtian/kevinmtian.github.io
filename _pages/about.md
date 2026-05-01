@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-# Kevin Tian
-
 > I build production AI systems that connect large-scale machine learning, search understanding, multimodal modeling, and real-world user intent.
 
 I am a Senior Machine Learning Engineer at ByteDance/TikTok in Singapore, working on AI systems for search and local services. My work focuses on building end-to-end machine learning systems that understand user intent, retrieve relevant entities, and serve reliable predictions at production scale.
