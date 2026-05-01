@@ -23,7 +23,7 @@ repository               : "kevinmtian/kevinmtian.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "kevin_tian_web_photo.png"
   name             : "Kevin Tian"
   pronouns         : # example: "she/her"  
   bio              : "MLE"
