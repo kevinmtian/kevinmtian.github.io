@@ -1,14 +1,12 @@
 ---
 title: "Resource-efficient LLM system for local-service search"
 # excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-excerpt: "A production-oriented LLM/SLM system for local-service search: structured extraction, POI grounding, LLM-as-a-judge verification, agent planning, RL-style post-training, and nearline cache-based deployment."
+excerpt: "A production-oriented LLM/SLM system for local-service search: structured extraction, POI grounding, LLM-as-a-judge verification, agent planning, RL-style post-training, and nearline cache-based deployment. It improved multilingual query understanding, increased cache reuse, and reduced online serving pressure under real search-engine constraints."
 collection: portfolio
 permalink: /projects/llm-agentic-search/
 ---
 
-
-TikTok Singapore, 2025-2026
-
+*Senior Machine Learning Engineer, TikTok (Singapore), 2023-present*
 
 ### Background
 
