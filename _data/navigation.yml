@@ -8,26 +8,30 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Publications"
-    url: /publications/
+  
 
-  - title: "Talks"
+  - title: "Projects"
     url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
+  - title: "Blog"
     url: /year-archive/
+  
+  # papers section includes Selected Talks & Presentations, etc strongly related to papers
+  - title: "Papers"
+    url: /publications/
+
+  # - title: "Teaching"
+    # url: /teaching/
     
-  - title: "CV"
-    url: /cv/
+  # community will include teaching, volunteering, Selected Talks & Presentations, etc, yale university, etc.  
+  - title: "Community"
+    url: /portfolio/
+              
+  # - title: "CV"
+  #   url: /cv/
     
   # - title: "CV"
   #   url: /cv-json/
     
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
