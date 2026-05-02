@@ -1,21 +1,20 @@
 ---
-layout: single
-title: "Projects"
-permalink: /projects/
-author_profile: true
-classes: compact-home
+title: "Resource-efficient LLM system for local-service search"
+# excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+excerpt: "A production-oriented LLM/SLM system for local-service search: structured extraction, POI grounding, LLM-as-a-judge verification, agent planning, RL-style post-training, and nearline cache-based deployment."
+collection: portfolio
+permalink: /projects/llm-agentic-search/
 ---
 
-## Resource-efficient LLM system for local-service search
 
 TikTok Singapore, 2025-2026
+
 
 ### Background
 
 Local-service search requires understanding short, ambiguous, and often multilingual queries. A user query may contain a location, POI name, brand, service category, user requirement, scenario, or implicit destination intent, but these signals are often mixed together in a few words. Traditional keyword matching, embedding retrieval, and rule-based parsing can produce noisy recall when the query contains ambiguous place names, incomplete POI mentions, informal expressions, or cross-language variants.
 
 The goal of this project was to build a production-ready query-understanding system that can convert raw search queries into reliable structured signals for downstream retrieval, ranking, and product experiences.
-
 
 ### Situation and Challenge
 
@@ -55,22 +54,3 @@ For model serving, I used quantization, multi-GPU inference, and high-throughput
 The system improved structured query understanding quality across multiple countries and languages, reaching strong precision/recall levels in evaluation and making local-service search signals more reliable for downstream retrieval and ranking.
 
 It also improved production feasibility: nearline cache-based deployment reduced online model-serving pressure, while canonicalized rewriting increased cache coverage to a high level. More importantly, the framework is generalizable beyond local-service search: the same pattern of LLM labeling, compact-model post-training, verifier/judge modules, agentic planning, and cache-first deployment can be reused for other search-intent understanding tasks.
-
-
-
-
-
-## Multimodal Foundation Models
-
-### Video/audio/text foundation-model pretraining
-
-At Meta, I worked on multimodal foundation-model pretraining for video, audio, and text understanding, including video/audio transformer models for harmful video detection, content integrity, video understanding, and ASR/audio transcription.
-
-## Generative AI & 3D Vision
-
-### Diffusion-based data synthesis and 3D medical AI
-
-After Meta, I worked on applied research and startup-oriented AI for generative data synthesis and 3D medical vision. I used diffusion-based image and annotation generation to create training data under limited-label settings and developed interactive/online-learning segmentation systems to reduce annotation burden.
-
-
-

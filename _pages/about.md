@@ -17,7 +17,7 @@ I am a Senior Machine Learning Engineer at ByteDance/TikTok Singapore, building 
 
 ### LLM Post-training & Agentic Search
 
-At TikTok, I build resource-efficient LLM/SLM systems for search understanding. I used a unified compact model for NER, query rewriting, POI recognition, structured parsing, LLM-as-a-judge verification, and agent-style planning. Through SFT/LoRA and reinforcement learning–based post-training, including PPO-style RLHF and DPO-style preference optimization, the system improved structured understanding quality while controlling latency and serving cost. I also helped design a nearline Kafka-to-cache architecture with cache-oriented query canonicalization, substantially improving cache coverage and reducing online model-serving pressure.
+At TikTok, I build resource-efficient LLM/SLM systems for search understanding. I used a unified compact model for NER, query rewriting, POI recognition, structured parsing, LLM-as-a-judge verification, and agent-style planning. Through SFT/LoRA and reinforcement learning–based post-training, including PPO-style RLHF and DPO-style preference optimization, the system improved structured understanding quality while controlling latency and serving cost. I also helped design a nearline Kafka-to-cache architecture with cache-oriented query canonicalization, substantially improving cache coverage and reducing online model-serving pressure. For details, check [Resource-efficient LLM system for local-service search]({{ '/projects/llm-agentic-search/' | relative_url }}).
 
 ### Multimodal Foundation Models
 
