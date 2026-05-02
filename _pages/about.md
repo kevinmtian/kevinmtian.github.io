@@ -11,7 +11,7 @@ redirect_from:
 
 I am a Senior Machine Learning Engineer at ByteDance/TikTok Singapore, building LLM post-training, agentic/RAG, and production AI systems for search. My career path connects multimodal foundation models at Meta, generative and 3D vision in applied research/startup settings, and LLM-driven search understanding at TikTok. I focus on turning model development into production impact through post-training, retrieval, verification, planning, serving, caching, and evaluation.
 
-**[Download CV](/files/paper1.pdf)**
+**[Download Resume](/files/Kevin_Tian_Resume_20260503.pdf)**
 
 ## Focus Areas
 
