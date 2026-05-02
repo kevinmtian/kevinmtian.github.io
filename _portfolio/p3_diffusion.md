@@ -34,7 +34,7 @@ First, I developed a diffusion-based medical image synthesis framework that gene
 
 Second, I developed weakly supervised segmentation methods using scribble annotations. The key idea was to train segmentation models from sparse user-provided scribbles while using attention-based similarity learning and CRF-style regularization to recover structure and boundary information on unlabeled pixels.
 
-Third, I developed an interactive online-learning framework for 3D medical image segmentation. The system allows users to provide sparse annotations over multiple interaction rounds, propagates them into 3D proxy masks, and dynamically updates the segmentation model as new volumes arrive.
+Third, I developed interactive and continual-learning frameworks for 3D medical image segmentation. These systems allow users to provide sparse annotations over multiple interaction rounds, propagate them into 3D proxy masks, and dynamically update the segmentation model as new volumes arrive. I also explored multi-scale multi-task distillation to improve robustness under incremental learning, where the model must adapt to new data while preserving knowledge from previous cases.
 
 ### How It Works
 
@@ -43,6 +43,8 @@ The generative component used a diffusion probabilistic model for annotation-con
 The weak-supervision component focused on scribble-supervised segmentation. In [AttenScribble](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sofIFCgAAAAJ&citation_for_view=sofIFCgAAAAJ:roLk4NBRz8UC), I proposed a pluggable spatial self-attention module that can be attached to FCN-style segmentation backbones. The module introduces global spatial interactions while preserving the efficiency of convolutional networks. From the learned attention, the framework constructs an attentive similarity loss, combined with partial segmentation loss and masked CRF regularization, so that the model can learn from sparse scribbles without relying on full pseudo-label propagation. Experiments on ACDC and CHAOS showed that the method outperformed existing weakly supervised approaches and achieved performance close to fully supervised benchmarks.
 
 The [interactive online-learning component](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sofIFCgAAAAJ&citation_for_view=sofIFCgAAAAJ:W7OEmFMy1HYC) treated annotation and training as a dynamic loop rather than a one-time offline process. For each 3D volume, sparse user inputs are propagated into a 3D proxy mask through image registration, which then serves as weak supervision for model updates. The segmenter, in return, guides the next round of user interaction through a residual map that highlights uncertain or inconsistent regions. To handle streaming data, the framework uses replay, loss weighting, and label smoothing to mitigate catastrophic forgetting and improve online learning robustness.
+
+A related [incremental-learning component](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sofIFCgAAAAJ&citation_for_view=sofIFCgAAAAJ:2osOgNQ5qMEC) used multi-scale multi-task distillation to mitigate forgetting during sequential 3D segmentation training. The model was trained not only against new supervision, but also against uncertainty-weighted predictions from the previous model, while multi-scale feature representations participated in contrastive learning to preserve discriminative knowledge across updates. This made the framework more robust when data arrived one case at a time and full offline retraining was impractical.
 
 ### Impact
 
